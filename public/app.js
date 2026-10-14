@@ -8,10 +8,12 @@ for (const sec of SECCIONES) {
         html +=
             `<div class="item">
             <p>${it.n}. ${it.texto}</p>
-            <label><input type="radio" name='item-${it.n}' value="cumple">Cumple</label>
-            <label><input type="radio" name='item-${it.n}' value="no_cumple">No cumple</label>
-            <label><input type="radio" name='item-${it.n}' value="no_aplica" checked> No aplica</label>
-            <input type="text" name='obs-${item.n}' placeholder='observaciones'>
+                <div class="opciones">
+                    <label><input type="radio" name='item-${it.n}' value="cumple">Cumple</label>
+                    <label><input type="radio" name='item-${it.n}' value="no_cumple">No cumple</label>
+                    <label><input type="radio" name='item-${it.n}' value="no_aplica" checked> No aplica</label>
+                </div>
+                <input type="text" name='obs-${it.n}' placeholder='observaciones'>
             </div>`
     }
 }
@@ -19,7 +21,7 @@ for (const sec of SECCIONES) {
 document.getElementById("aislamiento").innerHTML = html;
 
 document.getElementById("formulario").addEventListener("submit",
-    (e) => {
+    async (e) => {
         e.preventDefault();
 
         const registro = {
@@ -38,6 +40,25 @@ document.getElementById("formulario").addEventListener("submit",
                 registro.items.push({ n: it.n, estados: estados, evaluar: evaluar });
             }
         }
-        console.log(registro)
-    }
-)
+        console.log(registro);
+
+        const notificacion = document.getElementById("notificacion");
+        
+
+        try {
+            const respuesta = await fetch("/api/formularios", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(registro),
+            });
+
+            if (respuesta.ok) {
+                notificacion.textContent = "Guardado";
+                e.target.reset();
+            } else {
+                notificacion.textContent = "El Servidor no responde";
+            }
+        } catch {
+            notificacion.textContent = "No hay conexion con el servidor";
+        }
+    })

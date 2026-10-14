@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de chequeo</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <h1>Conectado exitosamente</h1>
+    <a href="lavado.html">Higiene</a>
+    <h1>Lista de chequeo Aislamiento</h1>
+    <p id="notificacion"></p>
     <form id="formulario">
-        <input name="habitacion" placeholder="habitación">
+        <input id="habitacion" name="habitacion" placeholder="habitación" required>
+        <a href="lista.html">Ver registros Guardados</a>
         <div id="aislamiento"></div>
         <button type="submit">Aceptar</button>
     </form>

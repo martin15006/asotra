@@ -1,0 +1,72 @@
+/* 1. Base: tamaño de letra legible y contenido centrado */
+* { box-sizing: border-box; }
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0 auto;
+  padding: 16px;
+  max-width: 650px;
+  background: #f4f6f8;
+  color: #1f2933;
+}
+
+#habitacion{
+    border-radius: 20px;
+    border:2px solid black;
+    padding: 14px;
+}
+/* 2. Cada pregunta como una tarjeta separada */
+.item {
+  background: white;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* 3. Las opciones en fila y grandes para el dedo */
+.opciones {
+  display: flex;
+  gap: 8px;
+}
+.opciones label {
+  flex: 1;
+  text-align: center;
+  padding: 12px;
+  border: 2px solid #d0d7de;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* 4. Color según la opción marcada */
+.opciones label:has(input[value="cumple"]:checked)   { background: #d1f2dc; border-color: #2f9e55; }
+.opciones label:has(input[value="no_cumple"]:checked) { background: #fde2e1; border-color: #d64545; }
+.opciones label:has(input[value="no_aplica"]:checked)    { background: #eceff1; border-color: #8a96a3; }
+
+/* 5. Campos de texto cómodos en el celular */
+input[type="text"] {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgba(233, 236, 34, 0.08);
+  border: 1px solid #c4ccd4;
+  border-radius: 8px;
+}
+
+/* 6. El botón siempre visible abajo */
+button[type="submit"] {
+  position: sticky;
+  bottom: 12px;
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  background: #1f6feb;
+  color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
