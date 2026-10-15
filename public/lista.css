@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    margin: 0 auto;
+    padding: 16px;
+    max-width: 900px;
+    background: #f7f5f2;
+    color: #2b2a33;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.boton {
+    padding: 9px 16px;
+    border: 2px solid #4338ca;
+    border-radius: 8px;
+    background: white;
+    color: #4338ca;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.boton:hover {
+    background: #4338ca;
+    color: white;
+    transition: all 1s;
+}
+
+
+
+h1 {
+    margin: 22px 0 16px;
+    font-size: 24px;
+    text-align: center;
+    color: #312e81;
+}
+
+#lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
+}
+
+.tarjeta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 16px;
+    background: white;
+    border-radius: 14px;
+    border-top: 5px solid #4338ca;
+    box-shadow: 0 2px 8px rgba(43, 42, 51, 0.08);
+}
+
+.tarjeta h3 {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+    font-size: 18px;
+    align-self: center;
+}
+
+.tarjeta p {
+    margin: 0;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background: #f1f0fa;
+    font-size: 14px;
+}
+
+.tarjeta p:first-of-type {
+    grid-column: 1 / -1;
+    padding: 0;
+    background: none;
+    color: #77758a;
+    font-size: 13px;
+}
+
+.tarjeta p:last-child {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0;
+    background: none;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 800;
+    color: #4338ca;
+}

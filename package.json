@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon --ignore data/ server.js",
+    "dev": "nodemon --ignore data/ --ignore public/ server.js --dev",
     "start": "node server.js"
   },
   "keywords": [],
@@ -15,7 +15,8 @@
     "express": "^5.3.0"
   },
   "devDependencies": {
+    "connect-livereload": "^0.6.1",
+    "livereload": "^0.10.3",
     "nodemon": "^3.1.14"
   }
-  
 }

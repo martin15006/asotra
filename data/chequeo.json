@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1792098108517,
+    "hora": "2026-10-15T21:01:48.517Z",
+    "perfil": "aux",
+    "servicio": "B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "desp_pac",
+        "accion": "omision"
+      }
+    ]
+  },
+  {
+    "id": 1792098152599,
+    "hora": "2026-10-15T21:02:32.599Z",
+    "perfil": "andrea",
+    "servicio": "C",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_pac",
+        "accion": "omision"
+      }
+    ]
+  }
+]

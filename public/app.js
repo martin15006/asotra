@@ -8,10 +8,10 @@ for (const sec of SECCIONES) {
         html +=
             `<div class="item">
             <p>${it.n}. ${it.texto}</p>
-                <div class="opciones">
+                <div class="opciones" required>
                     <label><input type="radio" name='item-${it.n}' value="cumple">Cumple</label>
                     <label><input type="radio" name='item-${it.n}' value="no_cumple">No cumple</label>
-                    <label><input type="radio" name='item-${it.n}' value="no_aplica" checked> No aplica</label>
+                    <label><input type="radio" name='item-${it.n}' value="no_aplica"> No aplica</label>
                 </div>
                 <input type="text" name='obs-${it.n}' placeholder='observaciones'>
             </div>`

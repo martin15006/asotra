@@ -7,26 +7,27 @@ function agregarChequeo() {
     document.getElementById("bloques").insertAdjacentHTML("beforeend", `
         <div class="item">
             <p><strong>chequeo ${n}</strong></p>
-
+            
             <p>Indicación</p>
             <div class="opciones">
-                <label><input type="checkbox" name="indi-${n}" value="ant_pac">Antes del paciente</label>
-                <label><input type="checkbox" name="indi-${n}" value="ant_asept">Antes de actividad aseptica</label>
-                <label><input type="checkbox" name="indi-${n}" value="desp_fc">Despues fluido corporales</label>
-                <label><input type="checkbox" name="indi-${n}" value="desp_pac">Despues del paciente</label>
-                <label><input type="checkbox" name="indi-${n}" value="desp_ent_p">Despues del entorno del paciente</label>
+            <label><input type="radio" name="indi-${n}" value="ant_pac" required>Antes del paciente</label>
+            <label><input type="radio" name="indi-${n}" value="ant_asept">Antes de actividad aseptica</label>
+                <label><input type="radio" name="indi-${n}" value="desp_fc">Despues fluido corporales</label>
+                <label><input type="radio" name="indi-${n}" value="desp_pac">Despues del paciente</label>
+                <label><input type="radio" name="indi-${n}" value="desp_ent_p">Despues del entorno del paciente</label>
             </div>
 
             <p>Acción HM</p>
             <div class="opciones">
-                <label><input type="radio" name="acci-${n}" value="fm" required>Fricción de manos</label>
-                <label><input type="radio" name="acci-${n}" value="lv">Lavado de manos</label>
-                <label><input type="radio" name="acci-${n}" value="omision">Omisión</label>
-                <label><input type="radio" name="acci-${n}" value="guantes">Guantes</label>
+            <label><input type="radio" name="acci-${n}" value="fm" required>Fricción de manos</label>
+            <label><input type="radio" name="acci-${n}" value="lv">Lavado de manos</label>
+            <label><input type="radio" name="acci-${n}" value="omision">Omisión</label>
+            <label><input type="radio" name="acci-${n}" value="guantes">Guantes</label>
             </div>
-        </div>`
+            </div>`
     );
 }
+const notificacion = document.getElementById("notificacion");
 
 document.getElementById("chequeo").addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -38,13 +39,10 @@ document.getElementById("chequeo").addEventListener("submit", async (e) => {
     };
 
     for (let n = 1; n <= contador; n++) {
-        const cumple = document.querySelectorAll(`input[name="indi-${n}"]:checked`);
+        const indicacion = document.querySelector(`input[name="indi-${n}"]:checked`).value;
+        const accion = document.querySelector(`input[name="acci-${n}"]:checked`).value;
 
-        const no_cumple = Array.from(cumple).map(c => c.value);
-
-        const no_aplica = document.querySelector(`input[name="acci-${n}"]:checked`).value;
-
-        chequeo.bloques.push({ n: n, no_cumple: no_cumple, no_aplica: no_aplica });
+        chequeo.bloques.push({n:n, indicacion:indicacion, accion:accion});
     }
 
     try {
@@ -71,5 +69,3 @@ document.getElementById("chequeo").addEventListener("submit", async (e) => {
 
 agregarChequeo();
 document.getElementById("agregar").addEventListener("click", agregarChequeo);
-
-// pedidos=registros
