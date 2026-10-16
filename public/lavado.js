@@ -10,8 +10,8 @@ function agregarChequeo() {
             
             <p>Indicación</p>
             <div class="opciones">
-            <label><input type="radio" name="indi-${n}" value="ant_pac" required>Antes del paciente</label>
-            <label><input type="radio" name="indi-${n}" value="ant_asept">Antes de actividad aseptica</label>
+                <label><input type="radio" name="indi-${n}" value="ant_pac" required>Antes del paciente</label>
+                <label><input type="radio" name="indi-${n}" value="ant_asept">Antes de accion aseptica</label>
                 <label><input type="radio" name="indi-${n}" value="desp_fc">Despues fluido corporales</label>
                 <label><input type="radio" name="indi-${n}" value="desp_pac">Despues del paciente</label>
                 <label><input type="radio" name="indi-${n}" value="desp_ent_p">Despues del entorno del paciente</label>
@@ -29,43 +29,44 @@ function agregarChequeo() {
 }
 const notificacion = document.getElementById("notificacion");
 
-document.getElementById("chequeo").addEventListener("submit", async (e) => {
-    e.preventDefault();
+document.getElementById("chequeo").addEventListener("submit",
+    async (e) => {
+        e.preventDefault();
 
-    const chequeo = {
-        perfil: document.querySelector('[name="perfil"]').value,
-        servicio: document.querySelector('[name="servicio"]').value,
-        bloques: [],
-    };
+        const chequeo = {
+            perfil: document.querySelector('[name="perfil"]').value,
+            servicio: document.querySelector('[name="servicio"]').value,
+            bloques: [],
+        };
 
-    for (let n = 1; n <= contador; n++) {
-        const indicacion = document.querySelector(`input[name="indi-${n}"]:checked`).value;
-        const accion = document.querySelector(`input[name="acci-${n}"]:checked`).value;
+        for (let n = 1; n <= contador; n++) {
+            const indicacion = document.querySelector(`input[name="indi-${n}"]:checked`).value;
+            const accion = document.querySelector(`input[name="acci-${n}"]:checked`).value;
 
-        chequeo.bloques.push({n:n, indicacion:indicacion, accion:accion});
-    }
-
-    try {
-        const respuesta = await fetch("/api/lavado", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(chequeo),
-        });
-
-        if (respuesta.ok) {
-            notificacion.textContent = "Guardado";
-            e.target.reset();
-            document.getElementById("bloques").innerHTML= "";
-            contador= 0;
-            agregarChequeo();
-        } else {
-            notificacion.textContent = "El Servidor no responde";
+            chequeo.bloques.push({ n: n, indicacion: indicacion, accion: accion });
         }
-    } catch {
-        notificacion.textContent = "No hay conexion con el servidor";
-    }
 
-})
+        try {
+            const respuesta = await fetch("/api/lavado", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(chequeo),
+            });
+
+            if (respuesta.ok) {
+                notificacion.textContent = "Guardado";
+                e.target.reset();
+                document.getElementById("bloques").innerHTML = "";
+                contador = 0;
+                agregarChequeo();
+            } else {
+                notificacion.textContent = "El Servidor no responde";
+            }
+        } catch {
+            notificacion.textContent = "No hay conexion con el servidor";
+        }
+
+    })
 
 agregarChequeo();
 document.getElementById("agregar").addEventListener("click", agregarChequeo);

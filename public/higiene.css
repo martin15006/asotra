@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15.5px;
+    margin: 10px auto;
+    padding: 25px;
+    background: #eef3f2;
+    border: 2px solid #0f766e;
+    border-radius: 25px;
+    max-width: 900px;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.boton {
+    text-decoration: none;
+    border: 2px solid #0f766e;
+    border-radius: 25px;
+    padding: 8px 16px;
+    color: #0f766e;
+    background: white;
+    font-size: 14px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.boton:hover {
+    background: #0f766e;
+    color: white;
+}
+
+
+h1 {
+    margin: 14px 0;
+    padding: 14px 12px;
+    background: #0f766e;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 24px;
+    letter-spacing: 0.3px;
+}
+
+#higiene {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
+}
+
+.tarjeta {
+    padding: 16px;
+    background: white;
+    border-top: 5px solid #0f766e;
+    box-shadow: 0 2px 8px rgba(43, 42, 51, 0.08);
+    border-radius: 25px;
+}
+
+.tarjeta h3 {
+    font-size: 20px;
+    margin: 0;
+    align-self: center;
+}
+
+.tarjeta p:first-of-type {
+    color: #0f766e;
+    font-size: 13px;
+}
+
+.detalle {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 8px;
+}
+
+.detalle li {
+    margin: 8px 0;
+    border-bottom: 1px dashed #d9e2e0;
+}
+
+.detalle li:last-child {
+    border-bottom: none;
+}

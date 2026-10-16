@@ -29,5 +29,56 @@
         "accion": "omision"
       }
     ]
+  },
+  {
+    "id": 1792164264907,
+    "hora": "2026-10-16T15:24:24.907Z",
+    "perfil": "fer",
+    "servicio": "Hospitalizacion_B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "omision"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_pac",
+        "accion": "fm"
+      },
+      {
+        "n": 3,
+        "indicacion": "ant_asept",
+        "accion": "guantes"
+      },
+      {
+        "n": 4,
+        "indicacion": "desp_ent_p",
+        "accion": "fm"
+      },
+      {
+        "n": 5,
+        "indicacion": "desp_fc",
+        "accion": "lv"
+      }
+    ]
+  },
+  {
+    "id": 1792167645518,
+    "hora": "2026-10-16T16:20:45.518Z",
+    "perfil": "Hug",
+    "servicio": "Hospitalizacion D",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "desp_fc",
+        "accion": "lv"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_ent_p",
+        "accion": "fm"
+      }
+    ]
   }
 ]

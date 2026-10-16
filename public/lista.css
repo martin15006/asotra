@@ -4,11 +4,14 @@
 
 body {
     font-family: system-ui, sans-serif;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 16px;
     max-width: 900px;
     background: #f7f5f2;
     color: #2b2a33;
+    border: 1px solid rgb(69, 69, 243);
+    border-radius:25px;
+
 }
 
 .barra {
