@@ -29,6 +29,21 @@ function agregarChequeo() {
 }
 const notificacion = document.getElementById("notificacion");
 
+function intentarAgregarChequeo() {
+    const n = contador;
+
+    const indicacion = document.querySelector(`input[name="indi-${n}"]:checked`);
+    const accion = document.querySelector(`input[name="acci-${n}"]:checked`);
+
+    if (!indicacion || !accion) {
+        notificacion.textContent = `Completa el chequeo ${n} antes de añadir otro`;
+        return;
+    }
+
+    notificacion.textContent = "";
+    agregarChequeo();
+}
+
 document.getElementById("chequeo").addEventListener("submit",
     async (e) => {
         e.preventDefault();
@@ -69,4 +84,4 @@ document.getElementById("chequeo").addEventListener("submit",
     })
 
 agregarChequeo();
-document.getElementById("agregar").addEventListener("click", agregarChequeo);
+document.getElementById("agregar").addEventListener("click", intentarAgregarChequeo);

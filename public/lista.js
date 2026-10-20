@@ -25,6 +25,9 @@ async function cargar() {
         <p>Estados: ${cumplieron} de ${r.items.length}</p>
         <p>Evaluados: ${evaluado}</p>
         <p>porcentaje: ${cumplimiento}</p>
+        <div class="barra">
+            <a href="/api/formularios/excel/${r.id}" class="boton">Descargar</a>
+        </div>
         </div>
         `;
     }

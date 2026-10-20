@@ -1,22 +1,250 @@
 [
   {
-    "id": 1792098108517,
-    "hora": "2026-10-15T21:01:48.517Z",
-    "perfil": "aux",
-    "servicio": "B",
+    "id": 1792422077936,
+    "hora": "2026-10-19T15:01:17.936Z",
+    "perfil": "Auxiliar mujer",
+    "servicio": "Hospitalizacion B",
     "bloques": [
       {
         "n": 1,
+        "indicacion": "ant_asept",
+        "accion": "guantes"
+      },
+      {
+        "n": 2,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792423406585,
+    "hora": "2026-10-19T15:23:26.585Z",
+    "perfil": "Auxiliares mujeres cuarto 308.. 10:06 gotas y contacto ",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "lv"
+      },
+      {
+        "n": 2,
         "indicacion": "desp_pac",
+        "accion": "lv"
+      },
+      {
+        "n": 3,
+        "indicacion": "desp_ent_p",
+        "accion": "lv"
+      },
+      {
+        "n": 4,
+        "indicacion": "ant_pac",
+        "accion": "lv"
+      },
+      {
+        "n": 5,
+        "indicacion": "ant_pac",
+        "accion": "lv"
+      }
+    ]
+  },
+  {
+    "id": 1792423634161,
+    "hora": "2026-10-19T15:27:14.161Z",
+    "perfil": "Doctora de rojo",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_ent_p",
+        "accion": "lv"
+      }
+    ]
+  },
+  {
+    "id": 1792423751541,
+    "hora": "2026-10-19T15:29:11.541Z",
+    "perfil": "Auxiliar mujer",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "fm"
+      },
+      {
+        "n": 2,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 3,
+        "indicacion": "desp_pac",
+        "accion": "fm"
+      }
+    ]
+  },
+  {
+    "id": 1792424674339,
+    "hora": "2026-10-19T15:44:34.339Z",
+    "perfil": "Doctor verde y sus auxiliares 311",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "omision"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_ent_p",
         "accion": "omision"
       }
     ]
   },
   {
-    "id": 1792098152599,
-    "hora": "2026-10-15T21:02:32.599Z",
-    "perfil": "andrea",
-    "servicio": "C",
+    "id": 1792424699683,
+    "hora": "2026-10-19T15:44:59.683Z",
+    "perfil": "Auxiliar del doctor se verde 311",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "omision"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_ent_p",
+        "accion": "lv"
+      }
+    ]
+  },
+  {
+    "id": 1792425184047,
+    "hora": "2026-10-19T15:53:04.047Z",
+    "perfil": "Aux chico",
+    "servicio": "Hospitalizacion A",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "desp_pac",
+        "accion": "fm"
+      },
+      {
+        "n": 2,
+        "indicacion": "ant_pac",
+        "accion": "fm"
+      },
+      {
+        "n": 3,
+        "indicacion": "desp_pac",
+        "accion": "fm"
+      }
+    ]
+  },
+  {
+    "id": 1792425360588,
+    "hora": "2026-10-19T15:56:00.588Z",
+    "perfil": "Auxiliar del doctor verde 304",
+    "servicio": "Hospitalizacion C",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792425382379,
+    "hora": "2026-10-19T15:56:22.379Z",
+    "perfil": "Auxiliares del doctor verde 303",
+    "servicio": "Hospitalizacion C",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792508545343,
+    "hora": "2026-10-20T15:02:25.343Z",
+    "perfil": "Auxiliares 2 mujeres ",
+    "servicio": "Hospitalizacion D",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 2,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 3,
+        "indicacion": "desp_pac",
+        "accion": "lv"
+      },
+      {
+        "n": 4,
+        "indicacion": "desp_ent_p",
+        "accion": "lv"
+      }
+    ]
+  },
+  {
+    "id": 1792508984968,
+    "hora": "2026-10-20T15:09:44.968Z",
+    "perfil": "Auxiliar medicamento ",
+    "servicio": "Hospitalizacion D",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_asept",
+        "accion": "fm"
+      },
+      {
+        "n": 2,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792508985593,
+    "hora": "2026-10-20T15:09:45.593Z",
+    "perfil": "Auxiliar medicamento ",
+    "servicio": "Hospitalizacion D",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_asept",
+        "accion": "fm"
+      },
+      {
+        "n": 2,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792509227052,
+    "hora": "2026-10-20T15:13:47.052Z",
+    "perfil": "Auxiliares del doctor blanco 404",
+    "servicio": "Hospitalizacion D",
     "bloques": [
       {
         "n": 1,
@@ -26,20 +254,110 @@
       {
         "n": 2,
         "indicacion": "desp_pac",
+        "accion": "fm"
+      }
+    ]
+  },
+  {
+    "id": 1792509258440,
+    "hora": "2026-10-20T15:14:18.440Z",
+    "perfil": "Auxiliar terapeuta ",
+    "servicio": "Hospitalizacion D",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_pac",
+        "accion": "lv"
+      }
+    ]
+  },
+  {
+    "id": 1792509638432,
+    "hora": "2026-10-20T15:20:38.432Z",
+    "perfil": "Auxiliar mujer",
+    "servicio": "Hospitalizacion A",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_asept",
+        "accion": "omision"
+      },
+      {
+        "n": 2,
+        "indicacion": "ant_pac",
+        "accion": "omision"
+      },
+      {
+        "n": 3,
+        "indicacion": "desp_pac",
         "accion": "omision"
       }
     ]
   },
   {
-    "id": 1792164264907,
-    "hora": "2026-10-16T15:24:24.907Z",
-    "perfil": "fer",
-    "servicio": "Hospitalizacion_B",
+    "id": 1792510987344,
+    "hora": "2026-10-20T15:43:07.344Z",
+    "perfil": "Andrea auxiliar ",
+    "servicio": "Hospitalizacion C",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "desp_pac",
+        "accion": "fm"
+      }
+    ]
+  },
+  {
+    "id": 1792511523438,
+    "hora": "2026-10-20T15:52:03.438Z",
+    "perfil": "Auxiliar mujer",
+    "servicio": "Hospitalizacion B",
     "bloques": [
       {
         "n": 1,
         "indicacion": "ant_pac",
-        "accion": "omision"
+        "accion": "fm"
+      },
+      {
+        "n": 2,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 3,
+        "indicacion": "ant_asept",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792525629927,
+    "hora": "2026-10-20T19:47:09.927Z",
+    "perfil": "Aux",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792525810382,
+    "hora": "2026-10-20T19:50:10.382Z",
+    "perfil": "Aux 306 jefe Stefani",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
       },
       {
         "n": 2,
@@ -48,35 +366,143 @@
       },
       {
         "n": 3,
-        "indicacion": "ant_asept",
+        "indicacion": "ant_pac",
         "accion": "guantes"
       },
       {
         "n": 4,
-        "indicacion": "desp_ent_p",
-        "accion": "fm"
-      },
-      {
-        "n": 5,
-        "indicacion": "desp_fc",
+        "indicacion": "desp_pac",
         "accion": "lv"
       }
     ]
   },
   {
-    "id": 1792167645518,
-    "hora": "2026-10-16T16:20:45.518Z",
-    "perfil": "Hug",
-    "servicio": "Hospitalizacion D",
+    "id": 1792526080368,
+    "hora": "2026-10-20T19:54:40.368Z",
+    "perfil": "Auxiliar mujer",
+    "servicio": "Hospitalizacion B",
     "bloques": [
       {
         "n": 1,
-        "indicacion": "desp_fc",
-        "accion": "lv"
+        "indicacion": "ant_asept",
+        "accion": "omision"
+      }
+    ]
+  },
+  {
+    "id": 1792526286495,
+    "hora": "2026-10-20T19:58:06.495Z",
+    "perfil": "Auxiliar de comida ",
+    "servicio": "Hospitalizacion A",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
       },
       {
         "n": 2,
+        "indicacion": "desp_pac",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792526471377,
+    "hora": "2026-10-20T20:01:11.377Z",
+    "perfil": "Auxiliar mujer 308 gotas y contacto",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "desp_pac",
+        "accion": "fm"
+      },
+      {
+        "n": 2,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792526822508,
+    "hora": "2026-10-20T20:07:02.508Z",
+    "perfil": "Auxiliar jefe ",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_pac",
+        "accion": "lv"
+      },
+      {
+        "n": 3,
         "indicacion": "desp_ent_p",
+        "accion": "lv"
+      }
+    ]
+  },
+  {
+    "id": 1792526945040,
+    "hora": "2026-10-20T20:09:05.040Z",
+    "perfil": "Auxiliar mujer jefe",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_pac",
+        "accion": "lv"
+      },
+      {
+        "n": 3,
+        "indicacion": "desp_ent_p",
+        "accion": "lv"
+      }
+    ]
+  },
+  {
+    "id": 1792529163384,
+    "hora": "2026-10-20T20:46:03.384Z",
+    "perfil": "Auxiliar 309 aislados ",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_pac",
+        "accion": "lv"
+      }
+    ]
+  },
+  {
+    "id": 1792530238167,
+    "hora": "2026-10-20T21:03:58.167Z",
+    "perfil": "Andrea ",
+    "servicio": "Hospitalizacion C",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "fm"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_pac",
         "accion": "fm"
       }
     ]

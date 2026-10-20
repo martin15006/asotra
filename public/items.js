@@ -16,3 +16,6 @@ const SECCIONES = [
     }
 ]
 
+if (typeof module !== "undefined") {
+    module.exports = SECCIONES;
+}

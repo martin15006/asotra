@@ -2,6 +2,7 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const ExcelJS = require("exceljs")
+const SECCIONES = require("./public/items.js");
 
 const app = express();
 const PORT = 3000;
@@ -21,7 +22,57 @@ if (process.argv.includes("--dev")) {
 app.use(express.static(path.join(__dirname, "public")));
 
 
-// descargar todos los chequeos en un excel 
+// descargar todos los chequos de aislamiento en un excel
+
+async function enviarExelAislamiento(res, registros, nombreArchivo) {
+    const libro = new ExcelJS.Workbook();
+    const hoja = libro.addWorksheet("Cuarto de Aislamiento");
+
+    hoja.columns = [
+        { header: "Fecha", key: "fecha" },
+        { header: "Habitación", key: "habitacion" },
+        { header: "Item", key: "item" },
+        { header: "Aspecto", key: "aspecto" },
+        { header: "Estado", key: "estado" },
+        { header: "Observación", key: "observacion" }
+    ]
+
+    for (const l of registros) {
+        const fecha = l.hora ? new Date(l.hora).toLocaleString("es-CO") : "Sin fecha";
+        for (const it of l.items) {
+            hoja.addRow({
+                fecha: fecha,
+                habitacion: l.habitacion,
+                item: it.n,
+                aspecto: SECCIONES[0].items.find(x => x.n === it.n).texto,
+                estado: it.estados,
+                observacion: it.evaluar,
+            });
+        }
+    };
+
+    for (const col of hoja.columns) {
+        let max = 0;
+        col.eachCell(celda => {
+            const largo = celda.value ? String(celda.value).length : 0;
+            if (largo > max) max = largo;
+        });
+        col.width = Math.min(max + 2, 60);
+    };
+
+    hoja.getRow(1).font = { bold: true };
+    hoja.views = [{ state: "frozen", ySplit: 1 }];
+    hoja.autoFilter = { from: "A1", to: "F1" };
+    hoja.getColumn("aspecto").alignment = { wrapText: true, vertical: "top" };
+
+    res.setHeader("Content-type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+    res.setHeader("Content-Disposition", `attachment; filename="${nombreArchivo}"`);
+    await libro.xlsx.write(res);
+    res.end();
+}
+
+
+// descargar todos los chequeos de HM en un excel 
 
 const INDICACIONES = {
     ant_pac: "Antes del paciente",
@@ -125,12 +176,27 @@ app.get("/api/lavado/excel/:id", async (req, res) => {
     const id = Number(req.params.id);
     const encontrados = leer(MANOS).filter(p => p.id === id);
 
-    if(encontrados.length === 0){
+    if (encontrados.length === 0) {
         return res.status(404).send("No Existe ese registro");
     };
 
-    await enviarExel(res, encontrados,`lavado-${id}.xlsx`);
+    await enviarExel(res, encontrados, `lavado-${id}.xlsx`);
 });
+
+app.get("/api/formularios/excel", async (req, res) => {
+    await enviarExelAislamiento(res, leer(ARCHIVO), "Aislamiento.xlsx");
+});
+
+app.get("/api/formularios/excel/:id", async (req, res) => {
+    const id = Number(req.params.id);
+    const encontrados = leer(ARCHIVO).filter(p => p.id === id);
+
+    if (encontrados.length === 0) {
+        return res.status(404).send("No existe este registro");
+    };
+
+    await enviarExelAislamiento(res, encontrados, `aislamiento-${id}.xlsx`)
+})
 
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Servidor en el puerto: http://localhost:${PORT}`);

@@ -1,64 +1,8 @@
 [
   {
-    "id": 1791987359527,
-    "habitacion": "402",
-    "items": [
-      {
-        "n": 1,
-        "estados": "no_aplica",
-        "evaluar": ""
-      },
-      {
-        "n": 2,
-        "estados": "no_aplica",
-        "evaluar": ""
-      },
-      {
-        "n": 3,
-        "estados": "no_aplica",
-        "evaluar": ""
-      },
-      {
-        "n": 4,
-        "estados": "no_aplica",
-        "evaluar": ""
-      },
-      {
-        "n": 5,
-        "estados": "no_aplica",
-        "evaluar": ""
-      },
-      {
-        "n": 6,
-        "estados": "no_aplica",
-        "evaluar": ""
-      },
-      {
-        "n": 7,
-        "estados": "no_aplica",
-        "evaluar": ""
-      },
-      {
-        "n": 8,
-        "estados": "no_aplica",
-        "evaluar": ""
-      },
-      {
-        "n": 9,
-        "estados": "no_aplica",
-        "evaluar": ""
-      },
-      {
-        "n": 10,
-        "estados": "no_aplica",
-        "evaluar": ""
-      }
-    ]
-  },
-  {
-    "id": 1791989823018,
-    "hora": "2026-10-14T14:57:03.018Z",
-    "habitacion": "509",
+    "id": 1792421112315,
+    "hora": "2026-10-19T14:45:12.315Z",
+    "habitacion": "309",
     "items": [
       {
         "n": 1,
@@ -72,12 +16,12 @@
       },
       {
         "n": 3,
-        "estados": "no_cumple",
+        "estados": "no_aplica",
         "evaluar": ""
       },
       {
         "n": 4,
-        "estados": "no_cumple",
+        "estados": "cumple",
         "evaluar": ""
       },
       {
@@ -87,74 +31,17 @@
       },
       {
         "n": 6,
-        "estados": "no_cumple",
+        "estados": "cumple",
         "evaluar": ""
       },
       {
         "n": 7,
-        "estados": "no_aplica",
-        "evaluar": ""
-      },
-      {
-        "n": 8,
         "estados": "no_cumple",
         "evaluar": ""
       },
       {
-        "n": 9,
-        "estados": "cumple",
-        "evaluar": ""
-      },
-      {
-        "n": 10,
-        "estados": "no_aplica",
-        "evaluar": "Hola"
-      }
-    ]
-  },
-  {
-    "id": 1791991915737,
-    "hora": "2026-10-14T15:31:55.737Z",
-    "habitacion": "4014",
-    "items": [
-      {
-        "n": 1,
-        "estados": "no_aplica",
-        "evaluar": ""
-      },
-      {
-        "n": 2,
-        "estados": "no_cumple",
-        "evaluar": ""
-      },
-      {
-        "n": 3,
-        "estados": "no_aplica",
-        "evaluar": ""
-      },
-      {
-        "n": 4,
-        "estados": "no_aplica",
-        "evaluar": ""
-      },
-      {
-        "n": 5,
-        "estados": "cumple",
-        "evaluar": ""
-      },
-      {
-        "n": 6,
-        "estados": "no_aplica",
-        "evaluar": ""
-      },
-      {
-        "n": 7,
-        "estados": "cumple",
-        "evaluar": ""
-      },
-      {
         "n": 8,
-        "estados": "no_aplica",
+        "estados": "cumple",
         "evaluar": ""
       },
       {
@@ -170,9 +57,9 @@
     ]
   },
   {
-    "id": 1791992181523,
-    "hora": "2026-10-14T15:36:21.523Z",
-    "habitacion": "502",
+    "id": 1792421218657,
+    "hora": "2026-10-19T14:46:58.657Z",
+    "habitacion": "310",
     "items": [
       {
         "n": 1,
@@ -186,7 +73,64 @@
       },
       {
         "n": 3,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 4,
+        "estados": "no_aplica",
+        "evaluar": ""
+      },
+      {
+        "n": 5,
         "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 6,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 7,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 8,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 9,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 10,
+        "estados": "cumple",
+        "evaluar": ""
+      }
+    ]
+  },
+  {
+    "id": 1792421315254,
+    "hora": "2026-10-19T14:48:35.254Z",
+    "habitacion": "311",
+    "items": [
+      {
+        "n": 1,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 2,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 3,
+        "estados": "no_aplica",
         "evaluar": ""
       },
       {
@@ -196,22 +140,193 @@
       },
       {
         "n": 5,
-        "estados": "no_cumple",
+        "estados": "cumple",
         "evaluar": ""
       },
       {
         "n": 6,
-        "estados": "no_cumple",
+        "estados": "cumple",
         "evaluar": ""
       },
       {
         "n": 7,
-        "estados": "no_aplica",
+        "estados": "no_cumple",
         "evaluar": ""
       },
       {
         "n": 8,
         "estados": "no_aplica",
+        "evaluar": ""
+      },
+      {
+        "n": 9,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 10,
+        "estados": "cumple",
+        "evaluar": ""
+      }
+    ]
+  },
+  {
+    "id": 1792421825341,
+    "hora": "2026-10-19T14:57:05.341Z",
+    "habitacion": "312",
+    "items": [
+      {
+        "n": 1,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 2,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 3,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 4,
+        "estados": "no_aplica",
+        "evaluar": ""
+      },
+      {
+        "n": 5,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 6,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 7,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 8,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 9,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 10,
+        "estados": "cumple",
+        "evaluar": ""
+      }
+    ]
+  },
+  {
+    "id": 1792421903126,
+    "hora": "2026-10-19T14:58:23.126Z",
+    "habitacion": "313",
+    "items": [
+      {
+        "n": 1,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 2,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 3,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 4,
+        "estados": "no_aplica",
+        "evaluar": ""
+      },
+      {
+        "n": 5,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 6,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 7,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 8,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 9,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 10,
+        "estados": "cumple",
+        "evaluar": ""
+      }
+    ]
+  },
+  {
+    "id": 1792438700253,
+    "hora": "2026-10-19T19:38:20.253Z",
+    "habitacion": "407",
+    "items": [
+      {
+        "n": 1,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 2,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 3,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 4,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 5,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 6,
+        "estados": "no_aplica",
+        "evaluar": ""
+      },
+      {
+        "n": 7,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 8,
+        "estados": "cumple",
         "evaluar": ""
       },
       {
@@ -227,18 +342,132 @@
     ]
   },
   {
-    "id": 1791993072569,
-    "hora": "2026-10-14T15:51:12.569Z",
-    "habitacion": "101",
+    "id": 1792507810330,
+    "hora": "2026-10-20T14:50:10.330Z",
+    "habitacion": "309",
     "items": [
       {
         "n": 1,
-        "estados": "no_aplica",
+        "estados": "cumple",
         "evaluar": ""
       },
       {
         "n": 2,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 3,
         "estados": "no_aplica",
+        "evaluar": ""
+      },
+      {
+        "n": 4,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 5,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 6,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 7,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 8,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 9,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 10,
+        "estados": "cumple",
+        "evaluar": ""
+      }
+    ]
+  },
+  {
+    "id": 1792507895319,
+    "hora": "2026-10-20T14:51:35.319Z",
+    "habitacion": "310",
+    "items": [
+      {
+        "n": 1,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 2,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 3,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 4,
+        "estados": "no_aplica",
+        "evaluar": ""
+      },
+      {
+        "n": 5,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 6,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 7,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 8,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 9,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 10,
+        "estados": "cumple",
+        "evaluar": ""
+      }
+    ]
+  },
+  {
+    "id": 1792507932119,
+    "hora": "2026-10-20T14:52:12.119Z",
+    "habitacion": "311",
+    "items": [
+      {
+        "n": 1,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 2,
+        "estados": "cumple",
         "evaluar": ""
       },
       {
@@ -253,12 +482,183 @@
       },
       {
         "n": 5,
-        "estados": "no_aplica",
+        "estados": "cumple",
         "evaluar": ""
       },
       {
         "n": 6,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 7,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 8,
         "estados": "no_aplica",
+        "evaluar": ""
+      },
+      {
+        "n": 9,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 10,
+        "estados": "cumple",
+        "evaluar": ""
+      }
+    ]
+  },
+  {
+    "id": 1792508037153,
+    "hora": "2026-10-20T14:53:57.153Z",
+    "habitacion": "312",
+    "items": [
+      {
+        "n": 1,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 2,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 3,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 4,
+        "estados": "no_aplica",
+        "evaluar": ""
+      },
+      {
+        "n": 5,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 6,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 7,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 8,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 9,
+        "estados": "no_aplica",
+        "evaluar": ""
+      },
+      {
+        "n": 10,
+        "estados": "cumple",
+        "evaluar": ""
+      }
+    ]
+  },
+  {
+    "id": 1792508070381,
+    "hora": "2026-10-20T14:54:30.381Z",
+    "habitacion": "313",
+    "items": [
+      {
+        "n": 1,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 2,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 3,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 4,
+        "estados": "no_aplica",
+        "evaluar": ""
+      },
+      {
+        "n": 5,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 6,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 7,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 8,
+        "estados": "no_cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 9,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 10,
+        "estados": "cumple",
+        "evaluar": ""
+      }
+    ]
+  },
+  {
+    "id": 1792510313563,
+    "hora": "2026-10-20T15:31:53.563Z",
+    "habitacion": "403",
+    "items": [
+      {
+        "n": 1,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 2,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 3,
+        "estados": "no_aplica",
+        "evaluar": ""
+      },
+      {
+        "n": 4,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 5,
+        "estados": "cumple",
+        "evaluar": ""
+      },
+      {
+        "n": 6,
+        "estados": "cumple",
         "evaluar": ""
       },
       {
@@ -273,29 +673,29 @@
       },
       {
         "n": 9,
-        "estados": "no_aplica",
+        "estados": "cumple",
         "evaluar": ""
       },
       {
         "n": 10,
-        "estados": "no_aplica",
+        "estados": "cumple",
         "evaluar": ""
       }
     ]
   },
   {
-    "id": 1791993088561,
-    "hora": "2026-10-14T15:51:28.561Z",
-    "habitacion": "102",
+    "id": 1792510402520,
+    "hora": "2026-10-20T15:33:22.520Z",
+    "habitacion": "406",
     "items": [
       {
         "n": 1,
-        "estados": "no_aplica",
+        "estados": "cumple",
         "evaluar": ""
       },
       {
         "n": 2,
-        "estados": "no_aplica",
+        "estados": "cumple",
         "evaluar": ""
       },
       {
@@ -330,29 +730,29 @@
       },
       {
         "n": 9,
-        "estados": "no_aplica",
+        "estados": "cumple",
         "evaluar": ""
       },
       {
         "n": 10,
-        "estados": "no_aplica",
+        "estados": "cumple",
         "evaluar": ""
       }
     ]
   },
   {
-    "id": 1791996200320,
-    "hora": "2026-10-14T16:43:20.320Z",
-    "habitacion": "402",
+    "id": 1792510428089,
+    "hora": "2026-10-20T15:33:48.089Z",
+    "habitacion": "407",
     "items": [
       {
         "n": 1,
-        "estados": "no_aplica",
+        "estados": "cumple",
         "evaluar": ""
       },
       {
         "n": 2,
-        "estados": "no_aplica",
+        "estados": "cumple",
         "evaluar": ""
       },
       {
@@ -362,37 +762,37 @@
       },
       {
         "n": 4,
-        "estados": "no_aplica",
+        "estados": "cumple",
         "evaluar": ""
       },
       {
         "n": 5,
-        "estados": "no_aplica",
+        "estados": "cumple",
         "evaluar": ""
       },
       {
         "n": 6,
-        "estados": "no_aplica",
+        "estados": "cumple",
         "evaluar": ""
       },
       {
         "n": 7,
-        "estados": "no_aplica",
+        "estados": "no_cumple",
         "evaluar": ""
       },
       {
         "n": 8,
-        "estados": "no_aplica",
+        "estados": "no_cumple",
         "evaluar": ""
       },
       {
         "n": 9,
-        "estados": "no_aplica",
+        "estados": "cumple",
         "evaluar": ""
       },
       {
         "n": 10,
-        "estados": "no_aplica",
+        "estados": "cumple",
         "evaluar": ""
       }
     ]
