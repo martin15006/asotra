@@ -8,6 +8,7 @@ const app = express();
 const PORT = 3000;
 const ARCHIVO = path.join(__dirname, "data", "registros.json");
 const MANOS = path.join(__dirname, "data", "chequeo.json");
+const BORRADORES = path.join(__dirname, "data", "borrador.json");
 
 app.use(express.json());
 
@@ -145,8 +146,10 @@ function leer(archivo) {
 
 function guardar(archivo, nuevo) {
     const lista = leer(archivo);
-    lista.push({ id: Date.now(), hora: new Date().toISOString(), ...nuevo });
+    const borrador = { id: Date.now(), hora: new Date().toISOString(), ...nuevo };
+    lista.push(borrador);
     fs.writeFileSync(archivo, JSON.stringify(lista, null, 2));
+    return borrador;
 }
 
 app.get("/api/formularios", (req, res) => {
@@ -196,6 +199,50 @@ app.get("/api/formularios/excel/:id", async (req, res) => {
     };
 
     await enviarExelAislamiento(res, encontrados, `aislamiento-${id}.xlsx`)
+})
+
+
+// Borrador 
+// ver todos los borradores guardados
+app.get("/api/borradores", (req, res) => {
+    res.json(leer(BORRADORES));
+});
+
+// ver solo 1 borrador guardado
+app.get("/api/borradores/:id", (req, res) => {
+    const id = Number(req.params.id);
+    const borrador = leer(BORRADORES).find(b => b.id === id);
+    if (!borrador) {
+        return res.status(404).json({ error: "No existe ese borrador" })
+    }
+    res.json(borrador);
+});
+
+// crear un borrador 
+app.post("/api/borradores", (req, res) => {
+    const nuevo = guardar(BORRADORES, req.body);
+    res.status(201).json({ ok: true, id: nuevo.id });
+});
+
+// Actualizar un borrador 
+app.put("/api/borradores/:id", (req, res) => {
+    const id = Number(req.params.id);
+    const lista = leer(BORRADORES);
+    const i = lista.findIndex(b => b.id === id);
+    if (i === -1) {
+        return res.status(404).json({ error: "No existe este borrador guardado" });
+    }
+    lista[i] = { ...lista[i], ...req.body, hora: new Date().toISOString() };
+    fs.writeFileSync(BORRADORES, JSON.stringify(lista, null, 2));
+    res.json({ ok: true });
+})
+
+// Borrar un guardado 
+app.delete("/api/borradores/:id", (req, res) => {
+    const id = Number(req.params.id);
+    const lista = leer(BORRADORES).filter(b => b.id !== id);
+    fs.writeFileSync(BORRADORES, JSON.stringify(lista, null, 2));
+    res.json({ ok: true });
 })
 
 app.listen(PORT, '0.0.0.0', () => {

@@ -506,5 +506,129 @@
         "accion": "fm"
       }
     ]
+  },
+  {
+    "id": 1792611038461,
+    "hora": "2026-10-21T19:30:38.461Z",
+    "perfil": "Auxiliar ",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_pac",
+        "accion": "lv"
+      },
+      {
+        "n": 3,
+        "indicacion": "desp_ent_p",
+        "accion": "lv"
+      }
+    ]
+  },
+  {
+    "id": 1792611375541,
+    "hora": "2026-10-21T19:36:15.541Z",
+    "perfil": "Doctor ",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792611607529,
+    "hora": "2026-10-21T19:40:07.529Z",
+    "perfil": "Auxiliares",
+    "servicio": "Hospitalizacion D",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792612342615,
+    "hora": "2026-10-21T19:52:22.615Z",
+    "perfil": "Camilleros ",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_pac",
+        "accion": "omision"
+      }
+    ]
+  },
+  {
+    "id": 1792614317446,
+    "hora": "2026-10-21T20:25:17.446Z",
+    "perfil": "Auxiliar 309",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "fm"
+      }
+    ]
+  },
+  {
+    "id": 1792614388021,
+    "hora": "2026-10-21T20:26:28.021Z",
+    "perfil": "Auxiliar mujer cuarto limpio ",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_asept",
+        "accion": "lv"
+      }
+    ]
+  },
+  {
+    "id": 1792614496123,
+    "hora": "2026-10-21T20:28:16.123Z",
+    "perfil": "Auxiliar mujer 309",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "fm"
+      },
+      {
+        "n": 2,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792615162613,
+    "hora": "2026-10-21T20:39:22.613Z",
+    "perfil": "Auxiliar mujer 308",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "desp_ent_p",
+        "accion": "lv"
+      }
+    ]
   }
 ]

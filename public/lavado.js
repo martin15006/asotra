@@ -1,4 +1,13 @@
 let contador = 0;
+let temporizador = null;
+
+function avisar(texto) {
+    notificacion.textContent = texto;
+    clearTimeout(temporizador);
+    temporizador = setTimeout(() => {
+        notificacion.textContent = "";
+    }, 3000);
+}
 
 function agregarChequeo() {
     contador++;
@@ -36,12 +45,23 @@ function intentarAgregarChequeo() {
     const accion = document.querySelector(`input[name="acci-${n}"]:checked`);
 
     if (!indicacion || !accion) {
-        notificacion.textContent = `Completa el chequeo ${n} antes de añadir otro`;
+        avisar(`Completa el chequeo ${n} antes de añadir otro`);
         return;
     }
 
     notificacion.textContent = "";
     agregarChequeo();
+}
+
+function quitarChequeo() {
+    if (contador <= 1) {
+        avisar(`Debe haber 1 chequeo`);
+        return;
+    }
+
+    document.getElementById("bloques").lastElementChild.remove();
+    contador--;
+    notificacion.textContent = "";
 }
 
 document.getElementById("chequeo").addEventListener("submit",
@@ -69,19 +89,20 @@ document.getElementById("chequeo").addEventListener("submit",
             });
 
             if (respuesta.ok) {
-                notificacion.textContent = "Guardado";
+                avisar("Guardado");
                 e.target.reset();
                 document.getElementById("bloques").innerHTML = "";
                 contador = 0;
                 agregarChequeo();
             } else {
-                notificacion.textContent = "El Servidor no responde";
+                avisar("El Servidor no responde");
             }
         } catch {
-            notificacion.textContent = "No hay conexion con el servidor";
+            avisar("No hay conexion con el servidor");
         }
 
     })
 
 agregarChequeo();
+document.getElementById("quitar").addEventListener("click", quitarChequeo);
 document.getElementById("agregar").addEventListener("click", intentarAgregarChequeo);

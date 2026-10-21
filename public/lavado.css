@@ -10,7 +10,7 @@ body {
     max-width: 560px;
     background: #eef3f2;
     color: #23302e;
-    border:3px solid #0f766e;
+    border: 3px solid #0f766e;
     border-radius: 25px;
 }
 
@@ -25,7 +25,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
-    transition: background 0.2s, color 0.2s;    
+    transition: background 0.2s, color 0.2s;
 }
 
 .boton:hover {
@@ -43,7 +43,8 @@ h1 {
     text-align: center;
 }
 
-input[type="text"], select {
+input[type="text"],
+select {
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
@@ -54,7 +55,8 @@ input[type="text"], select {
     background: white;
 }
 
-input[type="text"]:focus, select:focus {
+input[type="text"]:focus,
+select:focus {
     outline: none;
     border-bottom-color: #0f766e;
 }
@@ -139,6 +141,38 @@ input[type="text"]:focus, select:focus {
 #agregar:hover {
     background: #0f766e;
     color: white;
+}
+
+#quitar {
+    margin: 8px 0;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #d64545;
+    color: #d64545;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#quitar:hover {
+    background: #d64545;
+    color: white;
+}
+
+#notificacion:not(:empty) {
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    max-width: 90%;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #0f766e;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 button[type="submit"] {

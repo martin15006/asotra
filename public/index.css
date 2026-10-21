@@ -21,8 +21,8 @@ body {
     justify-content: center;
     color: white;
     font-family: Arial, sans-serif;
-    /* background: linear-gradient(#2dd4bf, #60a5fa); */
-    background: radial-gradient(#5900ff, rgba(45,0,4,45));
+    /* background: radial-gradient(#5900ff, rgba(45,0,4,45)); */
+    background: radial-gradient(#5900ff, rgba(44, 0, 2, 45));
     position: relative;
     flex-direction: column;
     margin: 0;
@@ -63,7 +63,7 @@ h1 {
     position: absolute;
     inset: 58px;
     border-radius: 50%;
-    border: 10px dashed rgba(45,0,4,45);
+    border: 10px dashed rgba(45, 0, 4, 45);
     animation: girar 20s linear infinite reverse;
 }
 

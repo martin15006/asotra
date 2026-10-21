@@ -17,17 +17,17 @@ async function cargar() {
 
         html += `
         <div class="tarjeta">
-        <h3>Habitación ${r.habitacion}</h3>
-        <p>${fecha}</p>
-        <p>cumple: ${cumplieron}</p>
-        <p>no cumple: ${no_cumplieron}</p>
-        <p>no aplica: ${no_aplicaron}</p>
-        <p>Estados: ${cumplieron} de ${r.items.length}</p>
-        <p>Evaluados: ${evaluado}</p>
-        <p>porcentaje: ${cumplimiento}</p>
-        <div class="barra">
-            <a href="/api/formularios/excel/${r.id}" class="boton">Descargar</a>
-        </div>
+            <h3>Habitación ${r.habitacion}</h3>
+            <p>${fecha}</p>
+            <p>cumple: ${cumplieron}</p>
+            <p>no cumple: ${no_cumplieron}</p>
+            <p>no aplica: ${no_aplicaron}</p>
+            <p>Estados: ${cumplieron} de ${r.items.length}</p>
+            <p>Evaluados: ${evaluado}</p>
+            <p>porcentaje: ${cumplimiento}</p>
+            <div class="barra">
+                <a href="/api/formularios/excel/${r.id}" class="boton">Descargar</a>
+            </div>
         </div>
         `;
     }
