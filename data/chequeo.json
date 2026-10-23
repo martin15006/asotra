@@ -630,5 +630,270 @@
         "accion": "lv"
       }
     ]
+  },
+  {
+    "id": 1792676794748,
+    "hora": "2026-10-22T13:46:34.748Z",
+    "perfil": "Aux ",
+    "servicio": "Hospitalizacion D",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_pac",
+        "accion": "fm"
+      }
+    ]
+  },
+  {
+    "id": 1792677153078,
+    "hora": "2026-10-22T13:52:33.078Z",
+    "perfil": "Auxiliar",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 3,
+        "indicacion": "desp_ent_p",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792677261079,
+    "hora": "2026-10-22T13:54:21.079Z",
+    "perfil": "Auxiliar ",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_ent_p",
+        "accion": "omision"
+      },
+      {
+        "n": 3,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792677670781,
+    "hora": "2026-10-22T14:01:10.781Z",
+    "perfil": "Yulieth auxiliar ",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 2,
+        "indicacion": "ant_pac",
+        "accion": "fm"
+      },
+      {
+        "n": 3,
+        "indicacion": "ant_pac",
+        "accion": "fm"
+      },
+      {
+        "n": 4,
+        "indicacion": "desp_pac",
+        "accion": "fm"
+      }
+    ]
+  },
+  {
+    "id": 1792677920040,
+    "hora": "2026-10-22T14:05:20.040Z",
+    "perfil": "Yulieth auxiliar ",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_asept",
+        "accion": "guantes"
+      },
+      {
+        "n": 2,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 3,
+        "indicacion": "desp_pac",
+        "accion": "fm"
+      }
+    ]
+  },
+  {
+    "id": 1792677967051,
+    "hora": "2026-10-22T14:06:07.051Z",
+    "perfil": "Auxiliar mujer",
+    "servicio": "Hospitalizacion C",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792678117071,
+    "hora": "2026-10-22T14:08:37.071Z",
+    "perfil": "Yulieth auxiliar ",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "desp_pac",
+        "accion": "fm"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_ent_p",
+        "accion": "lv"
+      }
+    ]
+  },
+  {
+    "id": 1792678198213,
+    "hora": "2026-10-22T14:09:58.213Z",
+    "perfil": "Auxiliar mujer",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792678296621,
+    "hora": "2026-10-22T14:11:36.621Z",
+    "perfil": "Auxiliar mujer",
+    "servicio": "Hospitalizacion D",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "omision"
+      }
+    ]
+  },
+  {
+    "id": 1792678525845,
+    "hora": "2026-10-22T14:15:25.845Z",
+    "perfil": "Auxiliar mujer 307",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792696024781,
+    "hora": "2026-10-22T19:07:04.781Z",
+    "perfil": "Auxiliar mujer ",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      },
+      {
+        "n": 2,
+        "indicacion": "desp_pac",
+        "accion": "lv"
+      },
+      {
+        "n": 3,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792696722684,
+    "hora": "2026-10-22T19:18:42.684Z",
+    "perfil": "Auxiliar mujer",
+    "servicio": "Hospitalizacion A",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "guantes"
+      }
+    ]
+  },
+  {
+    "id": 1792703001787,
+    "hora": "2026-10-22T21:03:21.787Z",
+    "perfil": "Auxiliar hombre",
+    "servicio": "Hospitalizacion A",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_pac",
+        "accion": "fm"
+      }
+    ]
+  },
+  {
+    "id": 1792703834288,
+    "hora": "2026-10-22T21:17:14.288Z",
+    "perfil": "Auxiliar Yulieth ",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_asept",
+        "accion": "lv"
+      }
+    ]
+  },
+  {
+    "id": 1792704298171,
+    "hora": "2026-10-22T21:24:58.171Z",
+    "perfil": "Yulieth ",
+    "servicio": "Hospitalizacion B",
+    "bloques": [
+      {
+        "n": 1,
+        "indicacion": "ant_asept",
+        "accion": "lv"
+      },
+      {
+        "n": 2,
+        "indicacion": "ant_asept",
+        "accion": "guantes"
+      }
+    ]
   }
 ]

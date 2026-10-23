@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lista.css">
     <title>Lista Guardado</title>
 </head>
+
 <body>
-    <div class="barra">
-        <a href="index.html" class="boton">Inicio</a>
-        <a href="principal.html" class="boton">Nueva lista</a>
+    <div class="cuerpo">
+        <div class="barra">
+            <a href="principal.html" class="boton">Nueva lista</a>
+            <img src="./imagen/logo-asotrauma.png" alt="logo asotrauma" class="logo">
+            <a href="index.html" class="boton">Inicio</a>
+        </div>
+        <h1>Lista Guardados</h1>
+        <div class="barra">
+            <a href="/api/formularios/excel" class="boton">Descargar</a>
+        </div>
+        <div id="lista"></div>
+        <script src="lista.js"></script>
     </div>
-    <h1>Lista Guardados</h1>
-    <div class="barra">
-        <a href="/api/formularios/excel" class="boton">Descargar</a>
-    </div>
-    <div id="lista"></div>
-    <script src="lista.js"></script>
 </body>
+
 </html>

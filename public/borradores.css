@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    position: block;
+    margin: 0 auto 12px;
+    max-width: 160px;
+    width: 140px;
+    max-height: auto;
+}
+
+body {
+    background: radial-gradient(#5900ff, rgba(45, 0, 2, 45));
+    min-height: 97vh;
+    background-attachment:fixed ;
+}
+
+.cuerpo {
+    font-family: system-ui, sans-serif;
+    margin: 10px auto;
+    padding: 16px;
+    max-width: 900px;
+    background: #f7f5f2;
+    color: #2b2a33;
+    border: 1px solid rgb(69, 69, 243);
+    border-radius: 25px;
+
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    padding: 9px 16px;
+    border: 2px solid #4338ca;
+    border-radius: 8px;
+    background: white;
+    color: #4338ca;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.boton:hover {
+    background: #4338ca;
+    color: white;
+    transition: all 1s;
+}
+
+
+
+h1 {
+    margin: 22px 0 16px;
+    font-size: 24px;
+    text-align: center;
+    background-color: #4338ca;
+    color: white;
+    border-radius: 15px;
+}
+
+#lista,
+#borradores {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
+}
+
+.tarjeta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 16px;
+    background: white;
+    border-radius: 14px;
+    border-top: 5px solid #4338ca;
+    box-shadow: 0 2px 8px rgba(43, 42, 51, 0.08);
+}
+
+.tarjeta h3 {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+    font-size: 18px;
+    align-self: center;
+}
+
+.tarjeta p {
+    margin: 0;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background: #f1f0fa;
+    font-size: 14px;
+}
+
+.tarjeta p:first-of-type {
+    grid-column: 1 / -1;
+    padding: 0;
+    background: none;
+    color: #77758a;
+    font-size: 13px;
+}
+
+.tarjeta p:last-child {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0;
+    background: none;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 800;
+    color: #4338ca;
+}
+
+.acciones {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.acciones .boton {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.eliminar {
+    border-color: #d64545;
+    color: #d64545
+}
+
+.eliminar:hover {
+    background: #d64545;
+    color: white;
+}
+
+@media(min-width:1200px) {
+    .logo {
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        margin: 0;
+    }
+}

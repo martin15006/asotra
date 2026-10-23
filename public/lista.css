@@ -3,6 +3,19 @@
 }
 
 body {
+    background: radial-gradient(#5900ff, rgba(45, 0, 2, 45));
+    background-attachment: fixed;
+}
+
+.logo {
+    position: block;
+    margin: 0 auto 12px;
+    max-width: 160px;
+    width: 140px;
+    max-height: auto;
+}
+
+.cuerpo {
     font-family: system-ui, sans-serif;
     margin: 10px auto;
     padding: 16px;
@@ -10,7 +23,7 @@ body {
     background: #f7f5f2;
     color: #2b2a33;
     border: 1px solid rgb(69, 69, 243);
-    border-radius:25px;
+    border-radius: 25px;
 
 }
 
@@ -21,6 +34,8 @@ body {
 }
 
 .boton {
+    display: flex;
+    align-items: center;
     padding: 9px 16px;
     border: 2px solid #4338ca;
     border-radius: 8px;
@@ -49,7 +64,8 @@ h1 {
     border-radius: 15px;
 }
 
-#lista, #borradores{
+#lista,
+#borradores {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 14px;
@@ -101,25 +117,34 @@ h1 {
     color: #4338ca;
 }
 
-.acciones{
+.acciones {
     grid-column: 1 / -1;
     display: flex;
     gap: 8px;
     margin-top: 4px;
 }
 
-.acciones .boton{
+.acciones .boton {
     flex: 1;
     text-align: center;
     cursor: pointer;
 }
 
-.eliminar{
+.eliminar {
     border-color: #d64545;
     color: #d64545
 }
 
-.eliminar:hover{
+.eliminar:hover {
     background: #d64545;
     color: white;
+}
+
+@media(min-width:1200px) {
+    .logo {
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        margin: 0;
+    }
 }

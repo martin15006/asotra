@@ -3,6 +3,18 @@
 }
 
 body {
+    background: radial-gradient(#5600ff, rgba(45, 0, 2, 45));
+    background-attachment: fixed;
+}
+
+.logo {
+    position: block;
+    max-width: 160px;
+    width: 140px;
+    max-height: auto;
+}
+
+.cuerpo {
     font-size: 15.5px;
     margin: 10px auto;
     padding: 25px;
@@ -15,10 +27,17 @@ body {
 .barra {
     display: flex;
     justify-content: space-between;
-    margin: 15px 0;
+    margin: 0;
+}
+.descargar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 5px;
 }
 
 .boton {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     border: 2px solid #0f766e;
     border-radius: 25px;
@@ -84,4 +103,14 @@ h1 {
 
 .detalle li:last-child {
     border-bottom: none;
+}
+
+@media(min-width:1230px) {
+    .logo{
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        margin: 0;
+        width: 190px;
+    }
 }

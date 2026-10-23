@@ -9,23 +9,28 @@
 </head>
 
 <body>
-    <div class="opcion">
-        <a href="index.html" class="boton">Inicio</a>
-        <a href="lista.html" class="boton">registros Guardados</a>
-        <a href="borradores.html" class="boton">Borrador</a>
-    </div>
-    <h1>Lista de chequeo Aislamiento</h1>
-    <p id="notificacion"></p>
-    <form id="formulario">
-        <input id="habitacion" name="habitacion" placeholder="habitación" required>
-        <div id="aislamiento"></div>
-        <div class="acciones">
-            <button type="button" id="guardarBorrador">Guardar Borrador</button>
-            <button type="submit">Enviar</button>
+    <div class="cuerpo">
+        <div class="opcion">
+            <a href="index.html" class="boton">Inicio</a>
+            <a href="lista.html" class="boton">registros Guardados</a>
+            <a href="borradores.html" class="boton">Borrador</a>
         </div>
-    </form>
-    <script src="items.js"></script>
-    <script src="app.js"></script>
+        <div id="logo">
+            <h1>Lista de chequeo Aislamiento</h1>
+            <img src="./imagen/logo-asotrauma.png" alt="logo-asotrauma" class="logo">
+        </div>
+        <p id="notificacion"></p>
+        <form id="formulario">
+            <input id="habitacion" name="habitacion" placeholder="habitación" required>
+            <div id="aislamiento"></div>
+            <div class="acciones">
+                <button type="button" id="guardarBorrador">Guardar Borrador</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <script src="items.js"></script>
+        <script src="app.js"></script>
+    </div>
 </body>
 
 </html>

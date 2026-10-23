@@ -3,6 +3,23 @@
 }
 
 body {
+    background: radial-gradient(#5900ff, rgba(45, 0, 2, 45));
+    background-attachment: fixed;
+}
+
+.logo {
+    margin-left: auto;
+    width: 90px;
+    height: auto;
+}
+
+.opcion {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cuerpo {
     font-family: system-ui, sans-serif;
     font-size: 15px;
     margin: 10px auto;
@@ -200,4 +217,17 @@ button[type="submit"]:hover {
     color: #0f766e;
     font-weight: 600;
     text-align: center;
+}
+
+@media (min-width:1200px) {
+    .logo {
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        margin: 0;
+        max-width: 160px;
+        width: 140px;
+        height: auto;
+    }
+
 }

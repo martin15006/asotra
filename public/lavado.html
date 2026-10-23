@@ -9,30 +9,33 @@
 </head>
 
 <body>
-    <div class="opcion">
-        <a href="index.html" class="boton">Inicio</a>
-        <a href="higiene.html" class="boton">Registros</a>
+    <div class="cuerpo">
+        <div class="opcion">
+            <a href="index.html" class="boton">Inicio</a>
+            <a href="higiene.html" class="boton">Registros</a>
+            <img src="./imagen/logo-asotrauma.png" alt="logo-asotrauma" class="logo">
+        </div>
+        <h1>Chequeo de Higiene de Manos</h1>
+        <form id="chequeo">
+            <p id="notificacion"></p>
+            <input type="text" name="perfil" placeholder="Perfil" required>
+            <select name="servicio" required>
+                <option value="">Selecciona el area</option>
+                <option value="Hospitalizacion A">Hospitalización A</option>
+                <option value="Hospitalizacion B">Hospitalización B</option>
+                <option value="Hospitalizacion C">Hospitalizacion C</option>
+                <option value="Hospitalizacion D">Hospitalizacion D</option>
+            </select>
+
+            <div id="bloques"></div>
+
+            <button type="button" id="agregar">Añadir chequeo</button>
+            <button type="button" id="quitar">Quitar el ultimo chequeo</button>
+            <button type="submit">Enviar</button>
+
+        </form>
+        <script src="lavado.js"></script>
     </div>
-    <h1>Chequeo de Higiene de Manos</h1>
-    <form id="chequeo">
-        <p id="notificacion"></p>
-        <input type="text" name="perfil" placeholder="Perfil" required>
-        <select name="servicio" required>
-            <option value="">Selecciona el area</option>
-            <option value="Hospitalizacion A">Hospitalización A</option>
-            <option value="Hospitalizacion B">Hospitalización B</option>
-            <option value="Hospitalizacion C">Hospitalizacion C</option>
-            <option value="Hospitalizacion D">Hospitalizacion D</option>
-        </select>
-
-        <div id="bloques"></div>
-
-        <button type="button" id="agregar">Añadir chequeo</button>
-        <button type="button" id="quitar">Quitar el ultimo chequeo</button>
-        <button type="submit">Enviar</button>
-
-    </form>
-    <script src="lavado.js"></script>
 </body>
 
 </html>

@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro HM</title>
     <link rel="stylesheet" href="higiene.css">
 </head>
+
 <body>
-    <div class="barra">
-        <a href="index.html" class="boton">Inicio</a>
-        <a href="lavado.html" class="boton">Nueva Higiene</a>
-    </div>
-    <h1>Registro de Higiene de Manos</h1>
-    <div class="barra">
-        <a href="/api/lavado/excel" class="boton">Descargar Excel</a>
-    </div>
+    <div class="cuerpo">
+        <div class="barra">
+            <a href="lavado.html" class="boton">Nueva Higiene</a>
+            <img src="./imagen/logo-asotrauma.png" alt="logo asotrauma" class="logo">
+            <a href="index.html" class="boton">Inicio</a>
+        </div>
+        <h1>Registro de Higiene de Manos</h1>
+        <div class="descargar">
+            <a href="/api/lavado/excel" class="boton">Descargar Excel</a>
+        </div>
         <div id="higiene"></div>
         <script src="higiene.js"></script>
+    </div>
 </body>
+
 </html>

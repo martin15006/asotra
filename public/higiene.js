@@ -35,7 +35,7 @@ async function cargar() {
         <p>${fecha}</p>
         <h4>Chequeos realizados: ${c.bloques.length}</h4>
         <ul class="detalle">${detalles}</ul>
-        <div class="barra">
+        <div class="descargar">
             <a href="/api/lavado/excel/${c.id}" class="boton">Descargar</a>
         </div>
         </div>
